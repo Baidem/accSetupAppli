@@ -1,0 +1,243 @@
+<div class="bigscreen">
+        <figure>
+            <div class="nav-background"></div>
+            <img src="./assets/photo-background.png" alt="">
+        </figure>
+    </div>
+    <div class="page">
+        <header>
+            <nav>
+                <ul>
+                    <!-- <li class="button_nav"><a href="#">ABOUT</a></li>
+                    <li class="button_nav"><a href="#">SERVICES</a></li>
+                    <li class="button_nav"><a href="#">PROJECT</a></li> -->
+                    <li class="logo-nav"><a href="#"><img src="./assets/logo_accsetup_280x80px.png"
+                                alt="logo A C C setup"></a></li>
+                    <li class="button-nav session-name">
+                        <h1>
+                            <!-- SESSION NAME -->
+                        </h1>
+                    </li>
+                    <li class="button-nav home-link"><a href="#">
+                        <!-- HOME -->
+                    </a></li>
+                    <!-- <li class="button_nav"><a href="#">CONTACT</a></li> -->
+
+                </ul>
+            </nav>
+        </header>
+        <div class="container group-welcome">
+            <div class="welcome-box box-black-transparent border-white">
+                <h1>Welcome to ACC setup</h1>
+                <p>
+                    Manage your car setups. You can choise every cars and tracks of the Assetto Corsa Competizione video game. Create your sessions history of setups. Comment, save, load, copy and modify your DataBase.
+                </p>
+                <div class="enjoy-line"><p>Enjoy and perform ! </p>
+                    <div class="red-line"></div></div>
+                
+            </div>
+            <div class="container-connect">
+                <button class="button-connect box-black button-asymmetric">
+                    <p>Connect</p>
+                </button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+	
+	
+	*********************************************************
+	css
+	*********************************************************
+	
+	*{
+    margin: 0;
+    padding: 0;
+    font-family: Avenir, sans-serif;
+    color: beige;
+    
+}
+.bigscreen {
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    background-color: #1e2631;
+    z-index: -1000;
+}
+.bigscreen figure .nav-background {
+    height: 5rem;
+    background-color: #2f3030;
+    border-bottom: 0.3rem solid #c12512;
+    z-index: -900;
+   
+}
+.bigscreen figure img{
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    
+}
+
+.container {
+    display: flex;
+}
+
+.group-welcome {
+    margin-top: 18rem;
+    margin-inline: 20%;
+}
+
+.welcome-box h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.welcome-box p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.box-black-transparent {
+    background-color: rgba(30, 38, 49, 0.5);
+    padding: 1rem;
+}
+
+.enjoy-line {
+    display: flex;
+}
+
+.enjoy-line p {
+    width: 16rem;
+}
+
+.red-line {
+    border-bottom: #c12512 0.3rem solid;
+    width: 100%;
+    height: 1.6rem;
+}
+
+.border-white {
+    border: #f5f5f5 0.1rem solid;
+}
+
+.welcome-box {
+    width: 75%;
+    margin-right: 5rem;
+}
+
+.container-connect {
+    display: flex;
+    width: 25%;
+    justify-content: right;
+    align-items: end;
+    padding-bottom: 2rem;
+}
+
+.container-connect p {
+    color: #c12512;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.button-connect {
+    height: 2.2rem;
+    width: 90%;
+    border: none;
+}
+
+.box-black {
+    background-color: #050505;
+}
+
+.button-asymmetric {
+    transform: skew(20deg);
+}
+
+.button-asymmetric p {
+    transform: skew(-20deg);
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    /* background-color: pink; */
+    justify-content:space-between ;
+}
+
+nav ul li {
+    width: auto;
+    text-align: center;
+}
+
+nav .home-link {
+    display: flex;
+    height: 100%;
+    width: 9rem;
+}
+nav .button-nav a, nav .button-nav h1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+nav .button-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.178);
+
+}
+nav .logo-nav {
+    /* position: absolute; */
+    display: block;
+    height: 6rem;
+    width: auto;
+
+}
+nav .logo-nav img{
+    height: 5rem;
+    width: auto;
+}
+nav .logo-nav a {
+    display: flex;
+    width: 100%;
+    height: 97px;
+    padding-top: 10px;
+    justify-content: center;
+    text-decoration: none;
+}
+nav .logo-nav h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: serif;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #1e2631;
+    background-size: cover;
+}
+.page {
+    margin: 0 auto;
+    max-width: 80rem;
+    height: auto;
+}
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
