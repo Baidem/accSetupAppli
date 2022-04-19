@@ -42,11 +42,6 @@ button p {
 }
 
 
-
-br {
-    border: #c12512 solid .2rem;
-}
-
 /* class DRY */
 .flex-center {
     display: flex;
@@ -70,9 +65,8 @@ br {
     width: 80%;
     margin: auto;
 }
-.red-line {
-    width: 100%;
-}
+
+
 
 
 
@@ -110,21 +104,22 @@ header {
     display: none;
 }
 
-.container-article-wellconnect {
-    margin-top: 30vh;
+.container-article {
+    height: 100%;
 }
 
 .container-welcomebox{
-    width: 60%;
+    width: 50%;
 }
 
 .container-btn-connect {
-    width: 40%;
+    width: 20%;
+    /* height: 100%; */
 	align-items: flex-end;
 }
 
 .container-btn-connect button {
-    margin-bottom: 1rem;
+    margin-top: 8rem;
 }
 
 .container-welcomebox h1 {
@@ -139,10 +134,15 @@ header {
     font-style: italic;
 }
 
-.box-enjoy {
-    display: flex;
-    background-color: aquamarine;
+#article-welcome {
+    display: none;
 }
+
+.container-connection {
+    width: 20rem;
+    height: 20rem;
+}
+
 
 
 
@@ -174,10 +174,18 @@ header {
         width: 100%;
         margin-top: 1rem;
     }
-    .container-article-wellconnect {
+    .container-btn-connect button {
+        margin: 0;
+    }
+    .container-article {
+        display: block;
         margin-top: .5rem;
     }
-    
-    
+    .container-welcomebox h1 {
+        font-size: 1.5rem;
+    }
+    .container-welcomebox p {
+        font-size: .8rem;
+    }
 
   }
