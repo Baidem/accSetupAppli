@@ -5,6 +5,7 @@
     <title>ACC setup</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <script type="text/javascript" src="main.js" defer></script>
     <!-- attribut : defer pour exécuter le script après que la page soit chargée. -->
 </head>
@@ -35,8 +36,8 @@
         
         <!-- SECTION -->
         <section class="container-section">
-            <!-- #article-welcome -->
-            <article id="article-welcome" class="container-article wall-side flex-center">
+            <!-- #article-welcome****************************** -->
+            <article id="article-welcome" class="article-welcome wall-side flex-center">
                 <div class="container-welcomebox box-black-transparent border-white">
                     <h1>Welcome to ACC setup</h1>
                     <p>
@@ -49,14 +50,53 @@
                 </div> <!-- "container-btn-connect" -->
             </article> <!-- "container-article" -->
 
-             <!-- #article-connection -->
-             <article id="article-connection" class="container-article wall-side flex-center">
+             <!-- #article-connection*************************** -->
+             <article id="article-connection" class="article-connection wall-side flex-center">
                 <div class="container-connection box-black">
+                    <div class="container-signs">
+                        <div class="container-sign_in flex-center">SIGN IN</div>
+                        <div class="container-sign_up flex-center">SIGN UP</div>
+                    </div> <!-- container-signs -->
+                    <form class="container-form" action="">
+                        <div class="container-inputs flex-center">
+                            <div><label for="input-email">EMAIL</label><br> <input type="email" id="input-email" name="input-email" value="test@gmail.com"><br><hr></div>
+                            <div><label for="input-username">USER NAME:</label><br> <input type="text" id="input-username" name="input-username" value="test"><br><hr></div>
+                            <div><label for="input-password">PASSWORD</label><br> <input type="password" id="input-password" name="input-password" value="test"><br><hr></div>
+                        </div> <!-- "container-inputs" -->
+                        <div class="container-submit">
+                            <div class="text flex-center">LET ME IN</div>
+                            <button type="submit"><i class="fa-solid fa-angle-right"></i></button>
+                        </div> <!-- "container-submit" -->
+                    </form> <!-- "container-form" -->
+                </div> <!-- container-connection -->
+            </article> <!-- "article-connection" -->
+
+            <!-- #article-menu******************************** -->
+            <article id="article-menu" class="article-menu wall-side flex-center">
+                <div class="container-menu ">
+                    <h3>MENU</h3>
+                    <nav>
+                        <ul>
+                            <li>ACCOUNT</li>
+                            <hr>
+                            <li>LOGOUT</li>
+                            <hr>
+                            <li>LAST SESSION</li>
+                            <hr>
+                            <li>SESSIONS LIST</li>
+                            <hr>
+                            <li>CREATE A NEW SESSION</li>
+                        </ul>
+                    </nav>
+                    <h3>MENU</h3>
+
+                   
+                </div> <!-- container-connection -->
+            </article> <!-- "#article-menu" -->
 
 
-                </div>
-            </article> <!-- "container-article" -->
 
+        <!-- ************************** -->
         </section> <!-- "container-section" -->
         
     

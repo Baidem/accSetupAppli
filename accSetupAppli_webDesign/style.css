@@ -1,4 +1,48 @@
 /* general */
+:root {
+    --fds-black:#000000;
+    --fds-black-alpha-05:rgba(0, 0, 0, 0.05);
+    --fds-black-alpha-10:rgba(0, 0, 0, 0.1);
+    --fds-black-alpha-15:rgba(0, 0, 0, 0.15);
+    --fds-black-alpha-20:rgba(0, 0, 0, 0.2);
+    --fds-black-alpha-30:rgba(0, 0, 0, 0.3);
+    --fds-black-alpha-40:rgba(0, 0, 0, 0.4);
+    --fds-black-alpha-50:rgba(0, 0, 0, 0.5);
+    --fds-black-alpha-60:rgba(0, 0, 0, 0.6);
+    --fds-black-alpha-80:rgba(0, 0, 0, 0.8);
+    --fds-white-alpha-05:rgba(255, 255, 255, 0.05);
+    --fds-white-alpha-10:rgba(255, 255, 255, 0.1);
+    --fds-white-alpha-20:rgba(255, 255, 255, 0.2);
+    --fds-white-alpha-30:rgba(255, 255, 255, 0.3);
+    --fds-white-alpha-40:rgba(255, 255, 255, 0.4);
+    --fds-white-alpha-50:rgba(255, 255, 255, 0.5);
+    --fds-white-alpha-60:rgba(255, 255, 255, 0.6);
+    --fds-white-alpha-80:rgba(255, 255, 255, 0.8);
+    --fds-gray-00:#F5F6F7;
+    --fds-gray-05:#F2F3F5;
+    --fds-gray-10:#EBEDF0;
+    --fds-gray-20:#DADDE1;
+    --fds-gray-25:#CCD0D5;
+    --fds-gray-30:#BEC3C9;
+    --fds-gray-45:#8D949E;
+    --fds-gray-70:#606770;
+    --fds-gray-80:#444950;
+    --fds-gray-90:#303338;
+    --fds-gray-100:#1C1E21;
+    --base-blue:#1877F2;
+    --base-cherry:#F3425F;
+    --base-grape:#9360F7;
+    --base-lemon:#F7B928;
+    --base-lime:#45BD62;
+    --base-pink:#FF66BF;
+    --base-seafoam:#54C7EC;
+    --base-teal:#2ABBA7;
+    --base-tomato:#FB724B;
+
+    --accsetup-red : #c12512;
+
+  }
+  
 @font-face {
     font-family: ROBOTO;
     src: url(/accSetupAppli_webDesign/assets/fonts/Roboto-Regular.ttf);
@@ -6,13 +50,14 @@
 
 * {
     margin: 0;
+    padding: 0;
     font-family: ROBOTO;
-    color: whitesmoke;
+    color: var(--fds-gray-05);
     box-sizing: border-box;
 }
 
 body {
-    background-color: #2f3030;
+    background-color: var(--fds-gray-100);
 }
 
 a {
@@ -29,7 +74,7 @@ button {
 button p {
     font-size: 1rem;
     font-weight: bold;
-    color: #c12512;
+    color: var(--accsetup-red);
 }
 
 .btn-asymmetric {
@@ -41,6 +86,36 @@ button p {
     font-style: italic;
 }
 
+input {
+    background-color: transparent;
+    border: 0;
+}
+
+hr {
+    border: var(--fds-gray-25) solid .01rem;
+}
+
+label {
+    font-size: .6rem;
+    letter-spacing: .2rem;
+    
+}
+
+button {
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    font-weight: normal;
+
+}
+
 
 /* class DRY */
 .flex-center {
@@ -49,8 +124,12 @@ button p {
     align-items: center;
 }
 
+.box-gray-transparent {
+    background-color: var(--fds-black-alpha-50);
+}
+
 .box-black-transparent {
-    background-color: #050505b0;
+    background-color: var(--fds-black-alpha-80);
 }
 
 .box-black {
@@ -92,21 +171,20 @@ header {
     text-align: center;
 }
 
-/* section */
+/* sections */
+/* articles */
+.container-article {
+    height: 100%;
+}
+
 .container-section {
     background: url(/accSetupAppli_webDesign/assets/images/photo-background.png) center no-repeat;
     height: 88vh;
     width: 100%;
-    border-top: .2rem solid #c12512;
+    border-top: .2rem solid var(--accsetup-red);
 }
 
-.container-nav-setup {
-    display: none;
-}
-
-.container-article {
-    height: 100%;
-}
+/* article-welcome */
 
 .container-welcomebox{
     width: 50%;
@@ -134,14 +212,127 @@ header {
     font-style: italic;
 }
 
+
+
+/* article-connection */
+.container-connection {
+    display: flex;
+    width: 60%;
+    height: 60vh;
+}
+
+.container-signs {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    background-color: var(--fds-black);
+}
+
+.container-sign_in {
+    background-color: var(--fds-black);
+    color: var(--accsetup-red);
+}
+
+.container-sign_up {
+    background-color: var(--fds-white-alpha-10);
+}
+
+
+.container-sign_in, .container-sign_up {
+    height: 100%;
+
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    flex:3;
+    background-color: var(--fds-black);
+}
+
+.container-inputs div {
+    width: 60%;
+    margin-block: 1rem;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    background-color: var(--fds-white-alpha-10);
+}
+
+.container-submit {
+    display: flex;
+    flex: 1;
+    background-color: var(--accsetup-red);
+}
+
+.container-submit .text {
+    flex: 3;
+    height: 100%;
+    background-color: var(--fds-gray-90);
+}
+
+.container-submit button {
+    flex: 1;
+    font-size: 1rem;
+}
+
+/* article-menu */
+
+.article-menu {
+    width: 100%;
+    height: 100%;
+}
+
+.container-menu {
+    width: 20rem;
+    background-color: var(--fds-black-alpha-15);
+   
+}
+
+.container-menu h3 {
+    text-align: center;
+    padding-block: .3rem;
+    background-color: var(--fds-gray-100);
+}
+
+.container-menu h3:last-child {
+    color: transparent;
+}
+
+.container-menu ul {
+    text-align: center;
+    padding-block: .8rem;
+
+}
+.container-menu li {
+    padding-block: .8rem;
+}
+
+.container-menu hr {
+    width: 5rem;
+    margin: auto;
+}
+
+
+
+/* Les displays */
+
 #article-welcome {
     display: none;
 }
 
-.container-connection {
-    width: 20rem;
-    height: 20rem;
+#article-connection {
+    display: none;
 }
+
+.container-nav-setup {
+    display: none;
+}
+
+
 
 
 
